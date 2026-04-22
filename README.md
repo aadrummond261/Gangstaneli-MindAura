@@ -2,12 +2,12 @@
 
 🚀 Elevator Pitch
 
-Gangstaneli MindAura is a mental wellness support web app that helps users understand their emotional state through text and emoji check-ins while providing simple, real-time support and guidance. It is designed for individuals managing stress, anxiety, or mood changes who want a more reflective and helpful daily check-in experience.
+Gangstaneli MindAura is a mental wellness support web app that helps users understand their emotional state through multiple forms of input, including text, emojis, voice, and optional facial-expression capture, while providing simple, real-time support and guidance. It is designed for individuals managing stress, anxiety, or mood changes who want a more interactive and helpful daily check-in experience.
 
 🧠 Problem Statement
 
-Many mental health apps focus only on tracking moods, but they do not help users understand or respond to how they feel in the moment. Users often check in without receiving meaningful insight or support, which limits the usefulness of these tools.
-There is a need for a simple platform that not only captures emotional input but also helps users reflect, recognize patterns, and take small actions to improve their mental state throughout the day.
+Many mental health apps focus only on basic mood tracking, which does not fully capture how people actually feel. Users often express emotions through tone, facial expressions, or quick reactions like emojis, but these signals are ignored.
+There is a need for a more interactive platform that allows users to express themselves in multiple ways while also receiving meaningful insight and simple support to help manage their mental state throughout the day.
 
 👤 Target User
 
