@@ -1,52 +1,27 @@
-function MoodCheckIn({ setMood, setAura }) {
-  const handleMood = (selectedMood) => {
-    setMood(selectedMood);
+<div className="feature-card" id="mood">
+  <div className="icon">😊</div>
 
-    const auraMap = {
-      Happy: {
-        color: "Golden Yellow",
-        energy: "High",
-        message: "Your energy feels bright, motivated, and positive.",
-      },
-      Calm: {
-        color: "Sky Blue",
-        energy: "Peaceful",
-        message: "You seem grounded and emotionally balanced.",
-      },
-      Stressed: {
-        color: "Orange",
-        energy: "Tense",
-        message: "Take a pause. A short breathing break may help.",
-      },
-      Sad: {
-        color: "Soft Purple",
-        energy: "Low",
-        message: "Be gentle with yourself today. Support is still available.",
-      },
-      Tired: {
-        color: "Gray Blue",
-        energy: "Drained",
-        message: "Your body may need rest, water, and a simple routine.",
-      },
-    };
+  <h3>Mood Check-In</h3>
 
-    setAura(auraMap[selectedMood]);
-  };
+  <p>
+    Choose an emotion below or type how you feel.
+  </p>
 
-  return (
-    <section className="card">
-      <h2>Daily Mood Check-In</h2>
-      <p>How are you feeling today?</p>
+  <div className="emoji-grid">
+    <button className="emoji-btn">😊 Happy</button>
+    <button className="emoji-btn">😌 Calm</button>
+    <button className="emoji-btn">😔 Sad</button>
+    <button className="emoji-btn">😟 Stressed</button>
+    <button className="emoji-btn">😴 Tired</button>
+    <button className="emoji-btn">🤩 Excited</button>
+  </div>
 
-      <div className="button-group">
-        <button onClick={() => handleMood("Happy")}>Happy</button>
-        <button onClick={() => handleMood("Calm")}>Calm</button>
-        <button onClick={() => handleMood("Stressed")}>Stressed</button>
-        <button onClick={() => handleMood("Sad")}>Sad</button>
-        <button onClick={() => handleMood("Tired")}>Tired</button>
-      </div>
-    </section>
-  );
-}
+  <textarea
+    className="mood-textarea"
+    placeholder="Or type how you're feeling today..."
+  />
 
-export default MoodCheckIn;
+  <button className="main-btn">
+    Save Mood
+  </button>
+</div>
