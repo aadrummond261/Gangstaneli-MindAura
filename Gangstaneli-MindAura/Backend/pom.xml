@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.gangstaneli</groupId>
-    <artifactId>mindaura-backend</artifactId>
+    <artifactId>gangstaneli-mindaura-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>MindAura Backend</name>
+    <name>Gangstaneli MindAura Backend</name>
     <description>Backend services for MindAura</description>
 
     <properties>
@@ -50,6 +50,7 @@
     </dependencies>
 
     <build>
+        <finalName>gangstaneli-mindaura-backend</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

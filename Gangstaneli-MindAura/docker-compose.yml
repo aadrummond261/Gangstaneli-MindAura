@@ -1,0 +1,27 @@
+services:
+  gangstaneli-mindaura-backend:
+    build:
+      context: ./Backend
+    container_name: gangstaneli-mindaura-backend
+    environment:
+      PORT: 8080
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      SQLITE_DATABASE_URL: jdbc:sqlite:/app/data/mindaura.db
+    ports:
+      - "8080:8080"
+    volumes:
+      - gangstaneli-mindaura-data:/app/data
+
+  gangstaneli-mindaura-frontend:
+    build:
+      context: .
+      args:
+        VITE_API_BASE_URL: http://localhost:8080
+    container_name: gangstaneli-mindaura-frontend
+    depends_on:
+      - gangstaneli-mindaura-backend
+    ports:
+      - "3000:80"
+
+volumes:
+  gangstaneli-mindaura-data:
