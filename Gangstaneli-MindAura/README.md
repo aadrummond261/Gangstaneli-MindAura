@@ -96,6 +96,10 @@ backend service if you want live OpenAI chat. The frontend is configured to call
 https://gangstaneli-mindaura-api.onrender.com
 ```
 
+The free Render backend uses SQLite at `/tmp/mindaura.db`, so backend database
+records may reset when the service restarts. Use a paid Render disk or managed
+database when you need persistent production data.
+
 ## Production Build Checks
 
 Frontend:

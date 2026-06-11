@@ -8,13 +8,9 @@ services:
       - key: PORT
         value: 8080
       - key: SQLITE_DATABASE_URL
-        value: jdbc:sqlite:/app/data/mindaura.db
+        value: jdbc:sqlite:/tmp/mindaura.db
       - key: OPENAI_API_KEY
         sync: false
-    disk:
-      name: gangstaneli-mindaura-data
-      mountPath: /app/data
-      sizeGB: 1
 
   - type: web
     name: gangstaneli-mindaura
