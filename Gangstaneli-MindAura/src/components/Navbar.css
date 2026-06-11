@@ -17,6 +17,14 @@
   gap: 14px;
 }
 
+.nav-brand-button {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+}
+
 .logo {
   width: 65px !important;
   height: 65px !important;
@@ -41,10 +49,24 @@
 .nav-links {
   display: flex;
   gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-link {
   color: #7e22ce;
   font-weight: bold;
   text-decoration: none;
+}
+
+.nav-link {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(126, 34, 206, 0.08);
+}
+
+.nav-link.active {
+  color: white;
+  background: linear-gradient(135deg, #ec4899, #7c3aed);
 }

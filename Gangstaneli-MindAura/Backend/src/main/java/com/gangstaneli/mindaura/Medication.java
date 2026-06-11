@@ -29,7 +29,4 @@ public class Medication {
     public void setReminderTime(String reminderTime) { this.reminderTime = reminderTime; }
     public void setPurpose(String purpose) { this.purpose = purpose; }
     public void setSideEffects(String sideEffects) { this.sideEffects = sideEffects; }
- {
-    
-}
 }

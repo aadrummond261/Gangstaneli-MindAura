@@ -1,15 +1,18 @@
 import { useState } from "react";
+import { useCachedState } from "../utils/cacheStorage";
 
 function SupportSystem() {
   const [contact, setContact] = useState("");
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useCachedState("support-contacts", [], {
+    maxItems: 30,
+  });
 
   const addContact = () => {
     if (contact.trim() === "") {
       return;
     }
 
-    setContacts([...contacts, contact]);
+    setContacts([contact, ...contacts]);
     setContact("");
   };
 

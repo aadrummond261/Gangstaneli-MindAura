@@ -1,3 +1,8 @@
 com/gangstaneli/mindaura/MoodEntry.class
-com/gangstaneli/mindaura/MindAuraApplication.class
+com/gangstaneli/mindaura/AiChatController$AiChatRequest.class
+com/gangstaneli/mindaura/AiChatController.class
+com/gangstaneli/mindaura/SqliteDataDirectoryInitializer.class
 com/gangstaneli/mindaura/User.class
+com/gangstaneli/mindaura/MindAuraApplication.class
+com/gangstaneli/mindaura/AiChatController$AiChatResponse.class
+com/gangstaneli/mindaura/AiChatController$AiChatMessage.class

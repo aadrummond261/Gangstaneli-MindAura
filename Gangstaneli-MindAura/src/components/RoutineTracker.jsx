@@ -1,15 +1,18 @@
 import { useState } from "react";
+import { useCachedState } from "../utils/cacheStorage";
 
 function RoutineTracker() {
   const [routine, setRoutine] = useState("");
-  const [routines, setRoutines] = useState([]);
+  const [routines, setRoutines] = useCachedState("routines", [], {
+    maxItems: 50,
+  });
 
   const addRoutine = () => {
     if (routine.trim() === "") {
       return;
     }
 
-    setRoutines([...routines, routine]);
+    setRoutines([routine, ...routines]);
     setRoutine("");
   };
 
